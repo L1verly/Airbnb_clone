@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import SearchFilters from './SearchFilters'
+import UserNav from './UserNav'
+import AddPropertyButton from './AddPropertyButton'
 
 const Navbar = () => {
   return (
@@ -9,7 +11,7 @@ const Navbar = () => {
         <div className='max-w-[1500px] mx-auto px-6'>
             <div className='flex justify-between items-center'>
                 <Link href='/'>
-                    <Image src='/logo.svg' alt="Airbnb logo" width={180} height={38} />                        
+                    <Image src='/logo.svg' alt="Airbnb logo" width={102} height={32} />                        
                 </Link>
 
                 <div className='flex space-x-6'>
@@ -17,7 +19,8 @@ const Navbar = () => {
                 </div>
 
                 <div className='flex items-center space-x-6'>
-                    Add property
+                    <AddPropertyButton />
+                    <UserNav />
                 </div>
             </div>
         </div>

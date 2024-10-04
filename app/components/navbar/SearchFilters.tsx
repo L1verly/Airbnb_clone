@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 
 const SearchFilters = () => {
@@ -25,10 +24,17 @@ const SearchFilters = () => {
             </div>
         </div>
         <div className="p-2">
-            <div className="p-4 bg-airbnb rounded-full hover:bg-airbnb-dark transition cursor-pointer">
-                <Image src='/search.svg' alt='Search' width={16} height={16} 
+            <div className="p-4 rounded-full bg-airbnb hover:bg-airbnb-dark transition cursor-pointer">
+                {/* <Image src='/search.svg' alt='Search' width={16} height={16} 
                     fill={false} className="stroke-4 stroke-current overflow-visible"
-                    aria-hidden="true" role="presentation"/>
+                    aria-hidden="true" role="presentation"/> */}
+                <svg 
+                    viewBox="0 0 32 32" 
+                    style={{display:'block', fill:'none', height:'16px', width:'16px', stroke:'white', strokeWidth:'4', overflow:'visible'}} 
+                    aria-hidden="true" role="presentation" focusable="false"
+                >
+                    <path fill="none" d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"></path>
+                </svg>
             </div>
         </div>
     </div>
