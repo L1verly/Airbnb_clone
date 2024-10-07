@@ -1,8 +1,9 @@
 import Image from "next/image"
 import propertyPic from "@/public/demoPropertyImages/exampleProperty.webp"
+import Link from "next/link"
 const PropertyListItem = () => {
   return (
-    <div className="cursor-pointer">
+    <Link href='properties/mountain'>
         <div className="relative overflow-hidden aspect-square rounded-xl">
             <Image
                 fill
@@ -20,7 +21,7 @@ const PropertyListItem = () => {
         <div className="mt-2">
             <p className="text-sm"><span className="font-semibold">200$</span> night</p>
         </div>
-    </div>
+    </Link>
   )
 }
 
